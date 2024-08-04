@@ -303,29 +303,3 @@ column_mapping = {
 # Renombrar las columnas
 df.rename(columns=column_mapping, inplace=True)
 df
-
-# try:
-#         user_message =  f"{delimiter}{chunks_dict}{delimiter}"
-
-#         messages =  [
-#         {'role':'system',
-#          'content': system_message},
-#         {'role':'user',
-#          'content': f"{delimiter}{user_message}{delimiter}"},
-#         ]
-#         response = get_completion_from_messages(messages)
-#         print(response)
-
-#         return response
-# except Exception as e:
-#         print(f"Error in classify_poverty_description function: {e}")
-#         return None  # Return None or any default value
-
-# first_key, first_value = next(iter(chunks_dict.items()))
-
-# for i in range(3):
-#   chunks = textSplitter.create_documents(
-#       [final_dataframe["PDF_text"][i]],
-#       metadatas=[]
-#   )
-#   getCompletionFromMessages(system_prompt, messages)
